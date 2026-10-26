@@ -1,0 +1,19 @@
+name: fabrica-de-corporeos
+services:
+  web:
+    build: .
+    image: fabrica-de-corporeos:latest
+    container_name: fabrica-de-corporeos
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+x-casaos:
+  architectures: [amd64, arm64]
+  main: web
+  author: Diego Ravese
+  category: Web
+  description:
+    es_ES: Landing de Fábrica de Corpóreos
+  title:
+    es_ES: Fábrica de Corpóreos
+  port_map: "8080"

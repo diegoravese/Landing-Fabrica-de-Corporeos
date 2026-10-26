@@ -1,104 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Corte de Polyfan a medida | Fábrica de Corpóreos | General San Martin">
-    <title>Fabrica de Corporeos</title>
-    <link rel="canonical" href="http://www.fabricadecorporeos.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/build/img/favicon.png">
-    <link rel="stylesheet" href="build/css/app.css">
+    <title>Fábrica de Corpóreos | Corte de polyfan a medida con CNC</title>
+    <meta name="description" content="Corte de polyfan a medida con máquinas CNC. Letras y logotipos corpóreos en San Andrés, General San Martín. Presupuesto sin cargo y entrega en 72 hs hábiles.">
+    <meta name="theme-color" content="#323232">
+    <link rel="canonical" href="https://www.fabricadecorporeos.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:title" content="Fábrica de Corpóreos | Corte de polyfan a medida">
+    <meta property="og:description" content="Letras y logotipos corpóreos cortados a medida con máquinas CNC.">
+    <meta property="og:url" content="https://www.fabricadecorporeos.com/">
+    <meta property="og:image" content="https://www.fabricadecorporeos.com/img/galeria/1.jpg">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preload" href="fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Fábrica de Corpóreos",
+        "description": "Corte de polyfan a medida mediante máquinas CNC. Letras y logotipos corpóreos.",
+        "url": "https://www.fabricadecorporeos.com/",
+        "sameAs": ["https://www.mononacandybar.com"],
+        "email": "fabricadecorporeos@gmail.com",
+        "telephone": "+5491134687692",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Andrés, General San Martín",
+            "addressRegion": "Buenos Aires",
+            "addressCountry": "AR"
+        }
+    }
+    </script>
 </head>
 
 <body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
     <header class="header">
         <div class="contenedor contenido-header">
-            <h1>Fábrica de Corpóreos</h1>
-
-            <nav class="navegacion-principal">
-                <a href="#dudas">Dudas Frecuentes</a>
-                <a href="#galeria">Galeria</a>
-                <a href="#boletos">Contacto</a>
+            <p class="marca">Fábrica de Corpóreos</p>
+            <nav class="navegacion-principal" aria-label="Principal">
+                <a href="#dudas">Dudas frecuentes</a>
+                <a href="#galeria">Galería</a>
+                <a href="#contacto">Contacto</a>
             </nav>
         </div>
     </header>
-    <div class="cabecera">
-        <!-- Este es el contenido sobre el video -->
-        <div class="overlay">
-            <div class="contenedor contenido-overlay">
-                <h2>Cortamos Polyfan</h2>
+
+    <main id="contenido">
+        <section class="hero">
+            <div class="contenedor">
+                <span class="hero-etiqueta">General San Martín · Buenos Aires</span>
+                <h1>Cortamos polifan</h1>
                 <p>Corte a medida mediante máquinas CNC</p>
+                <a class="boton" href="#contacto">Pedí tu presupuesto</a>
             </div>
-        </div>
-    </div>
-    <section class="contenedor atencion-personalizada">
-        <div class="imagen">
+        </section>
+
+        <section class="contenedor atencion-personalizada reveal">
             <picture>
-                <source srcset="build/img/Heikki.avif" type="image/avif">
-                <source srcset="build/img/Heikki.webp" type="image/webp">
-                <img loading="lazy" width="200" height="300" src="build/img/Heikki.jpg" alt="letras corporeas Heikki">
+                <source srcset="img/atencion.avif" type="image/avif">
+                <source srcset="img/atencion.webp" type="image/webp">
+                <img width="800" height="600" decoding="async" src="img/atencion.jpg" alt="Letras corpóreas cortadas en polyfan">
             </picture>
-        </div>
-        <div class="contenido-atencion">
-            <h2>Atención Personalizada</h2>
-            <p class="info">Tanto al Gremio Gráfico como al Consumidor Final</p>
-            <p>Consultanos por letras y logotipos corpóreos a tu medida, te enviamos el presupuesto sin cargo.</p>
-            <p>Si trabajás en el gremio gráfico y necesitás un corte en polyfan, podés enviarnos el diseño vectorizado y te estaremos entregando el pedido en 72 hs hábiles.</p>
-        </div>
-    </section>
-    <section id="dudas" class="dudas">
+            <div class="contenido-atencion">
+                <h2>Atención personalizada</h2>
+                <p class="info">Tanto al gremio gráfico como al consumidor final</p>
+                <p>Consultanos por letras y logotipos corpóreos a tu medida, te enviamos el presupuesto sin cargo.</p>
+                <p>Si trabajás en el gremio gráfico y necesitás un corte en polyfan, podés enviarnos el diseño vectorizado y te estaremos entregando el pedido en 72 hs hábiles.</p>
+            </div>
+        </section>
 
-        <h3>¿Tenés alguna duda?</h3>
-
-        <div class="dudas-contenedor contenedor">
-            <h4>¿Hacen logos? ¿Cómo se los tengo que enviar?</h4>
-
-            <p>Realizamos logos, isologos, logotipos, iconos, dibujos, y toda clase de trabajos en 2D. Trabajamos a partir de archivos de vectores. También contamos con un servicio de vectorizado para clientes que no cuenten con el archivo para realizar el trabajo.</p>
-
-            <h4>¿Cuánto tardan en hacer el trabajo?</h4>
+        <section id="dudas" class="dudas">
+            <h2>¿Tenés alguna duda?</h2>
+            <div class="contenedor dudas-contenedor reveal">
                 
-            <p>El tiempo de demora es de 72 horas hábiles, puede ser un poco más en un caso donde el pedido sea muy grande, consultá con tiempo, comunicate con nosotros antes de enviar los archivos.</p>
+                <details><summary>¿Hacen logos? ¿Cómo se los tengo que enviar?</summary><p>Realizamos logos, isologos, logotipos, iconos, dibujos, y toda clase de trabajos en 2D. Trabajamos a partir de archivos de vectores. También contamos con un servicio de vectorizado para clientes que no cuenten con el archivo para realizar el trabajo.</p></details>
+
                 
-            <h4>¿Cuál es su política de devoluciones?</h4>
+                <details><summary>¿Cuánto tardan en hacer el trabajo?</summary><p>El tiempo de demora es de 72 horas hábiles, puede ser un poco más en un caso donde el pedido sea muy grande, consultá con tiempo, comunicate con nosotros antes de enviar los archivos.</p></details>
+
                 
-            <p>Somos fabricantes de elementos personalizados para cada cliente, a su medida y gusto, construidos con material resistente. Controlamos el producto antes de entregarlo y en el momento de la entrega junto al cliente. Cualquier rotura supone un uso indebido del elemento, por esta razón no aceptamos devoluciones.</p>
+                <details><summary>¿Cuál es su política de devoluciones?</summary><p>Somos fabricantes de elementos personalizados para cada cliente, a su medida y gusto, construidos con material resistente. Controlamos el producto antes de entregarlo y en el momento de la entrega junto al cliente. Cualquier rotura supone un uso indebido del elemento, por esta razón no aceptamos devoluciones.</p></details>
 
-            <h4>¿Cómo puedo pagar el trabajo?</h4>
                 
-            <p>Trabajamos a partir de una seña mayor o igual al 50% del monto total del trabajo. El saldo restante, lo abonás una vez entregado el mismo. Los pagos pueden realizarse en efectivo, por transferencia bancaria o por Mercadopago.</p>
+                <details><summary>¿Cómo puedo pagar el trabajo?</summary><p>Trabajamos a partir de una seña mayor o igual al 50% del monto total del trabajo. El saldo restante, lo abonás una vez entregado el mismo. Los pagos pueden realizarse en efectivo, por transferencia bancaria o por Mercadopago.</p></details>
+
                 
-            <h4>¿Hacen envíos?</h4>
-                
-            <p>Realizamos envíos a través de Mercadoenvíos (Mercadolibre). Tendrás que hacer la compra en una de las publicaciones de Mercadolibre, seleccionando la opción de envío a domicilio o a sucursal. Ahí te va a mostrar el costo del envío según la dirección que hayas ingresado en tu cuenta. Luego de hacer la compra, producimos tu pedido y lo despachamos. Te brindaremos el código de seguimiento para que puedas seguir la localización de tu pedido.</p>
-        </div>
+                <details><summary>¿Hacen envíos?</summary><p>Realizamos envíos a través de Mercadoenvíos (Mercadolibre). Tendrás que hacer la compra en una de las publicaciones de Mercadolibre, seleccionando la opción de envío a domicilio o a sucursal. Ahí te va a mostrar el costo del envío según la dirección que hayas ingresado en tu cuenta. Luego de hacer la compra, producimos tu pedido y lo despachamos. Te brindaremos el código de seguimiento para que puedas seguir la localización de tu pedido.</p></details>
+            </div>
+        </section>
 
-    </section>
+        <section id="galeria" class="galeria contenedor reveal">
+            <h2>Galería</h2>
+            <ul class="galeria-imagenes">
+            <li>
+                <a href="img/galeria/1.jpg" data-grande="img/galeria/1" aria-label="Ampliar trabajo 1">
+                    <picture>
+                        <source srcset="img/galeria/1-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/1-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/1-thumb.jpg" alt="Trabajo 1: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            <li>
+                <a href="img/galeria/2.jpg" data-grande="img/galeria/2" aria-label="Ampliar trabajo 2">
+                    <picture>
+                        <source srcset="img/galeria/2-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/2-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/2-thumb.jpg" alt="Trabajo 2: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            <li>
+                <a href="img/galeria/3.jpg" data-grande="img/galeria/3" aria-label="Ampliar trabajo 3">
+                    <picture>
+                        <source srcset="img/galeria/3-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/3-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/3-thumb.jpg" alt="Trabajo 3: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            <li>
+                <a href="img/galeria/4.jpg" data-grande="img/galeria/4" aria-label="Ampliar trabajo 4">
+                    <picture>
+                        <source srcset="img/galeria/4-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/4-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/4-thumb.jpg" alt="Trabajo 4: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            <li>
+                <a href="img/galeria/5.jpg" data-grande="img/galeria/5" aria-label="Ampliar trabajo 5">
+                    <picture>
+                        <source srcset="img/galeria/5-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/5-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/5-thumb.jpg" alt="Trabajo 5: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            <li>
+                <a href="img/galeria/6.jpg" data-grande="img/galeria/6" aria-label="Ampliar trabajo 6">
+                    <picture>
+                        <source srcset="img/galeria/6-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/6-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/6-thumb.jpg" alt="Trabajo 6: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            <li>
+                <a href="img/galeria/7.jpg" data-grande="img/galeria/7" aria-label="Ampliar trabajo 7">
+                    <picture>
+                        <source srcset="img/galeria/7-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/7-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/7-thumb.jpg" alt="Trabajo 7: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            <li>
+                <a href="img/galeria/8.jpg" data-grande="img/galeria/8" aria-label="Ampliar trabajo 8">
+                    <picture>
+                        <source srcset="img/galeria/8-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/8-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/8-thumb.jpg" alt="Trabajo 8: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            <li>
+                <a href="img/galeria/9.jpg" data-grande="img/galeria/9" aria-label="Ampliar trabajo 9">
+                    <picture>
+                        <source srcset="img/galeria/9-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/9-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/9-thumb.jpg" alt="Trabajo 9: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            <li>
+                <a href="img/galeria/10.jpg" data-grande="img/galeria/10" aria-label="Ampliar trabajo 10">
+                    <picture>
+                        <source srcset="img/galeria/10-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/10-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/10-thumb.jpg" alt="Trabajo 10: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            <li>
+                <a href="img/galeria/11.jpg" data-grande="img/galeria/11" aria-label="Ampliar trabajo 11">
+                    <picture>
+                        <source srcset="img/galeria/11-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/11-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/11-thumb.jpg" alt="Trabajo 11: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            <li>
+                <a href="img/galeria/12.jpg" data-grande="img/galeria/12" aria-label="Ampliar trabajo 12">
+                    <picture>
+                        <source srcset="img/galeria/12-thumb.avif" type="image/avif">
+                        <source srcset="img/galeria/12-thumb.webp" type="image/webp">
+                        <img loading="lazy" decoding="async" width="400" height="400" src="img/galeria/12-thumb.jpg" alt="Trabajo 12: letras corpóreas cortadas en polyfan">
+                    </picture>
+                </a>
+            </li>
+            </ul>
+        </section>
 
-    <section id="galeria" class="galeria contenedor">
-        <h3>Galeria</h3>
-
-        <ul class="galeria-imagenes"><!-- Aca entra el código JS --></ul>
-    </section>
-
-    <section id="boletos" class="boletos bg-verde">
-        <h3>Contacto</h3>
-
-        <div class="contenedor contenedor-contacto">
-            <p>E-mail: info@fabricadecorporeos.com</p>
-            <p>Teléfono del taller: 1154647480</p>
-            <p>Ubicacion: San Andrés, Partido de General San Martín, Buenos Aires</p>
-        </div>
-    </section>
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <div class="contenedor tarjetas">
+                <a class="tarjeta" href="mailto:fabricadecorporeos@gmail.com"><span>E-mail</span>fabricadecorporeos@gmail.com</a>
+                <a class="tarjeta" href="tel:+5491134687692"><span>Teléfono del taller</span>11 3468-7692</a>
+                <p class="tarjeta"><span>Ubicación</span>San Andrés, Partido de General San Martín, Buenos Aires</p>
+            </div>
+            <aside class="contenedor hermana">
+                <p>También producimos <strong>Monona Candybar</strong>: nombres y figuras con luces para el candybar.</p>
+                <a class="boton" href="https://www.mononacandybar.com" target="_blank" rel="noopener">Visitar mononacandybar.com</a>
+            </aside>
+        </section>
+    </main>
 
     <footer class="site-footer">
         <p>Fábrica de Corpóreos. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="build/js/app.js"></script>
+    <dialog class="visor" aria-label="Imagen ampliada">
+        <form method="dialog"><button class="btn-cerrar" aria-label="Cerrar">×</button></form>
+        <button class="nav-visor ant" type="button" aria-label="Anterior">‹</button>
+        <button class="nav-visor sig" type="button" aria-label="Siguiente">›</button>
+        <picture>
+            <source type="image/avif">
+            <source type="image/webp">
+            <img alt="">
+        </picture>
+    </dialog>
+
+    <script src="js/main.js" defer></script>
 </body>
+
 </html>
