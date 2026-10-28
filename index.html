@@ -24,7 +24,7 @@
         "name": "Fábrica de Corpóreos",
         "description": "Corte de polyfan a medida mediante máquinas CNC. Letras y logotipos corpóreos.",
         "url": "https://www.fabricadecorporeos.com/",
-        "sameAs": ["https://www.mononacandybar.com"],
+        "sameAs": ["https://www.mononacandybar.com", "https://www.instagram.com/fabricadecorporeos/"],
         "email": "fabricadecorporeos@gmail.com",
         "telephone": "+5491134687692",
         "address": {
@@ -38,6 +38,7 @@
 </head>
 
 <body>
+    <div class="progreso" aria-hidden="true"></div>
     <a class="saltar" href="#contenido">Saltar al contenido</a>
 
     <header class="header">
@@ -46,6 +47,7 @@
             <nav class="navegacion-principal" aria-label="Principal">
                 <a href="#dudas">Dudas frecuentes</a>
                 <a href="#galeria">Galería</a>
+                <a href="#presupuesto">Presupuesto</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </div>
@@ -55,11 +57,20 @@
         <section class="hero">
             <div class="contenedor">
                 <span class="hero-etiqueta">General San Martín · Buenos Aires</span>
-                <h1>Cortamos polifan</h1>
+                <h1>Cortamos <span class="resalte">polifan</span></h1>
                 <p>Corte a medida mediante máquinas CNC</p>
-                <a class="boton" href="#contacto">Pedí tu presupuesto</a>
+                <a class="boton" href="#presupuesto">Pedí tu presupuesto</a>
+                <a class="boton boton-wa" href="https://wa.me/5491134687692?text=Hola%2C%20quiero%20pedir%20un%20presupuesto" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
             </div>
+            <a class="bajar" href="#como" aria-label="Bajar">↓</a>
         </section>
+
+        <div class="cinta" aria-hidden="true">
+            <div class="cinta-pista">
+                <span>Letras corpóreas ✦ Logos ✦ Isologos ✦ Figuras 2D ✦ Corte CNC ✦ Polyfan a medida ✦ Presupuesto sin cargo ✦ </span>
+                <span>Letras corpóreas ✦ Logos ✦ Isologos ✦ Figuras 2D ✦ Corte CNC ✦ Polyfan a medida ✦ Presupuesto sin cargo ✦ </span>
+            </div>
+        </div>
 
         <section class="contenedor atencion-personalizada reveal">
             <picture>
@@ -71,7 +82,19 @@
                 <h2>Atención personalizada</h2>
                 <p class="info">Tanto al gremio gráfico como al consumidor final</p>
                 <p>Consultanos por letras y logotipos corpóreos a tu medida, te enviamos el presupuesto sin cargo.</p>
+                <p>¿No tenés el logo en vector? No hay problema: nosotros lo vectorizamos.</p>
                 <p>Si trabajás en el gremio gráfico y necesitás un corte en polyfan, podés enviarnos el diseño vectorizado y te estaremos entregando el pedido en 72 hs hábiles.</p>
+            </div>
+        </section>
+
+        <section id="como" class="pasos">
+            <div class="contenedor">
+                <h2>Así de simple</h2>
+                <ol class="pasos-lista">
+                    <li class="paso"><h3>Contanos qué necesitás</h3><p>Enviá texto, medidas o tu logo por el formulario o por WhatsApp. Si no tenés el vector, lo hacemos nosotros.</p></li>
+                    <li class="paso"><h3>Recibí tu presupuesto</h3><p>Sin cargo y sin compromiso. Para arrancar se abona una seña de al menos el 50%.</p></li>
+                    <li class="paso"><h3>Producimos y entregamos</h3><p>Tu pedido está en 72 hs hábiles. Enviamos a todo el país por Mercado Envíos.</p></li>
+                </ol>
             </div>
         </section>
 
@@ -82,6 +105,8 @@
                 <details><summary>¿Hacen logos? ¿Cómo se los tengo que enviar?</summary><p>Realizamos logos, isologos, logotipos, iconos, dibujos, y toda clase de trabajos en 2D. Trabajamos a partir de archivos de vectores. También contamos con un servicio de vectorizado para clientes que no cuenten con el archivo para realizar el trabajo.</p></details>
 
                 
+                <details><summary>¿Cuánto cuesta?</summary><p>Depende de las medidas, la cantidad y la complejidad del diseño. Pedinos el presupuesto sin cargo con el formulario o por WhatsApp y te respondemos con el valor.</p></details>
+
                 <details><summary>¿Cuánto tardan en hacer el trabajo?</summary><p>El tiempo de demora es de 72 horas hábiles, puede ser un poco más en un caso donde el pedido sea muy grande, consultá con tiempo, comunicate con nosotros antes de enviar los archivos.</p></details>
 
                 
@@ -95,7 +120,8 @@
             </div>
         </section>
 
-        <section id="galeria" class="galeria contenedor reveal">
+        <section id="galeria" class="galeria">
+            <div class="contenedor reveal">
             <h2>Galería</h2>
             <ul class="galeria-imagenes">
             <li>
@@ -207,12 +233,48 @@
                 </a>
             </li>
             </ul>
+            </div>
+        </section>
+
+        <div class="cinta cinta-negra" aria-hidden="true">
+            <div class="cinta-pista">
+                <span>Presupuesto sin cargo ✦ Respondemos por WhatsApp ✦ Entrega en 72 hs hábiles ✦ Envíos a todo el país ✦ </span>
+                <span>Presupuesto sin cargo ✦ Respondemos por WhatsApp ✦ Entrega en 72 hs hábiles ✦ Envíos a todo el país ✦ </span>
+            </div>
+        </div>
+
+        <section id="presupuesto" class="presupuesto">
+            <div class="contenedor reveal">
+            <h2>Pedí tu presupuesto</h2>
+            <p class="intro">Completá los datos y envialos por WhatsApp o por email. Si tenés el logo, adjuntalo en la conversación.</p>
+            <form id="form-presupuesto">
+                <label>Nombre<input name="nombre" required autocomplete="name"></label>
+                <label>Qué necesitás<select name="tipo">
+                    <option>Letras corpóreas</option>
+                    <option>Logo / isologo</option>
+                    <option>Figura o dibujo</option>
+                    <option>Otro</option>
+                </select></label>
+                <label>Texto o diseño (ej: nombre o palabra)<input name="texto"></label>
+                <label>Medidas aproximadas<input name="medidas" placeholder="ej: 30 cm de alto"></label>
+                <label>Cantidad<input name="cantidad" type="number" min="1" value="1"></label>
+                <label>Ciudad<input name="ciudad" autocomplete="address-level2"></label>
+                <label class="ancho">Comentarios<textarea name="comentarios" rows="3"></textarea></label>
+                <label class="ancho check"><input type="checkbox" name="vector"> Necesito que vectoricen mi logo</label>
+                <div class="acciones ancho">
+                    <button class="boton boton-wa" type="submit" data-via="wa">Enviar por WhatsApp</button>
+                    <button class="boton" type="submit" data-via="mail">Enviar por email</button>
+                </div>
+            </form>
+            </div>
         </section>
 
         <section id="contacto" class="contacto">
             <h2>Contacto</h2>
             <div class="contenedor tarjetas">
-                <a class="tarjeta" href="mailto:fabricadecorporeos@gmail.com"><span>E-mail</span>fabricadecorporeos@gmail.com</a>
+                <a class="tarjeta" href="mailto:fabricadecorporeos@gmail.com"><span>E-mail</span>fabricadecorporeos<wbr>@gmail.com</a>
+                <a class="tarjeta" href="https://wa.me/5491134687692?text=Hola%2C%20quiero%20pedir%20un%20presupuesto" target="_blank" rel="noopener"><span>WhatsApp</span>11 3468-7692</a>
+                <a class="tarjeta" href="https://www.instagram.com/fabricadecorporeos/" target="_blank" rel="noopener"><span>Instagram</span>@fabricadecorporeos</a>
                 <a class="tarjeta" href="tel:+5491134687692"><span>Teléfono del taller</span>11 3468-7692</a>
                 <p class="tarjeta"><span>Ubicación</span>Villa Ballester, Partido de General San Martín, Buenos Aires</p>
             </div>
@@ -223,7 +285,14 @@
         </section>
     </main>
 
+    <a class="wa-flotante" href="https://wa.me/5491134687692?text=Hola%2C%20quiero%20pedir%20un%20presupuesto" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">WhatsApp</a>
+
     <footer class="site-footer">
+        <nav class="pie-enlaces" aria-label="Redes">
+            <a href="https://www.instagram.com/fabricadecorporeos/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://wa.me/5491134687692" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="mailto:fabricadecorporeos@gmail.com">E-mail</a>
+        </nav>
         <p>Fábrica de Corpóreos. Todos los derechos reservados.</p>
     </footer>
 
