@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://www.fabricadecorporeos.com/sitemap.xml
