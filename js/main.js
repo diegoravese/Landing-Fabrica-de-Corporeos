@@ -2,7 +2,7 @@ const raiz = document.documentElement;
 raiz.classList.add('js');
 
 // Elementos que aparecen escalonados dentro de su grupo
-document.querySelectorAll('.galeria-imagenes li, .tarjeta, .paso, .dudas-contenedor details').forEach((el) => {
+document.querySelectorAll('.galeria-imagenes li, .tarjeta, .paso, .servicio, .dudas-contenedor details').forEach((el) => {
     el.style.setProperty('--i', [...el.parentElement.children].indexOf(el) % 6);
     el.classList.add('escalon');
 });
