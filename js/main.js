@@ -78,7 +78,7 @@ formulario.addEventListener('submit', (e) => {
         linea('Comentarios', d.get('comentarios')),
     ].filter(Boolean).join('\n');
     if (e.submitter.dataset.via === 'wa') {
-        window.open(`https://wa.me/5491134687692?text=${encodeURIComponent(mensaje)}`, '_blank', 'noopener');
+        window.open(`https://wa.me/5491168330452?text=${encodeURIComponent(mensaje)}`, '_blank', 'noopener');
     } else {
         location.href = `mailto:fabricadecorporeos@gmail.com?subject=${encodeURIComponent('Pedido de presupuesto')}&body=${encodeURIComponent(mensaje)}`;
     }
