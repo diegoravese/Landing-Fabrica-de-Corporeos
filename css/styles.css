@@ -103,7 +103,9 @@ img { display: block; width: 100%; height: auto; }
     transition: padding 0.3s;
 }
 .header.compacto .contenido-header { padding-block: 0.4rem; }
-.marca { margin: 0; color: var(--naranja); font-size: clamp(2rem, 1.6rem + 1vw, 2.8rem); font-weight: 800; letter-spacing: -0.01em; }
+/* Logotipo en contornos SVG con la tipografía de marca (Tw Cen MT Std Bold); toma el color naranja de .marca */
+.marca { margin: 0; color: var(--naranja); line-height: 0; }
+.marca svg { display: block; width: auto; height: clamp(2.2rem, 1.9rem + 0.8vw, 2.6rem); fill: currentColor; }
 .navegacion-principal { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 2.4rem; }
 .navegacion-principal a {
     position: relative;
